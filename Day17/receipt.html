@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Ui</title>
+
+    <style>
+        body {
+            margin: 10px;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #sec {
+            max-width: 1000px;
+            margin: 10px auto;
+            border: 20px solid black;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .imgg {
+            background-color: rgb(253, 237, 237);
+            padding: 10px;
+            box-shadow: 10px 10px green;
+        }
+
+        .imggrid {
+            height: 150px;
+            width: 150px;
+
+        }
+
+        .img1,
+        .img2,
+        .img3,
+        .img4 {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin-bottom: 10px;
+
+        }
+
+        .img1 {
+            background-image: url(Good_Food_Display_-_NCI_Visuals_Online.jpg);
+
+        }
+
+        .img2 {
+            background-image: url(Teezers\ Label\ Apple\ Flavour\ 400ml.jpg);
+
+        }
+
+        .img3 {
+            background-image: url(images.jpg);
+
+        }
+
+        .img4 {
+            background-image: url(images\ \(1\).jpg);
+
+        }
+
+        .food {
+            margin-bottom: 5px;
+            font-weight: 700;
+
+        }
+
+        .amo {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            align-items: center;
+        }
+
+        .amou {
+            padding: 5px 5px 5px 5px;
+            background-color: green;
+            border-radius: 5px;
+            color: white;
+
+        }
+
+        .line {
+            margin-top: 50px;
+            height: 10px;
+            width: 100%;
+            background-color: rgb(105, 98, 98);
+            border-radius: 20px;
+        }
+        .btn{
+            margin-top: -30px;
+            display: flex;
+            justify-content: flex-end;
+
+        }
+        button{
+            width: 350px;
+            height: 50px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            background-color: rgba(0, 128, 0, 0.048);
+            border: 2px solid green;
+            border-radius: 10px;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <section id="sec">
+        <h2>
+            Order Confirmation
+        </h2>
+        <p>We have receive your order</p>
+        <div class="container">
+            <div class="imgg">
+                <div class="imggrid img1"></div>
+                <div class="food">Ghana food</div>
+                <div class="amo">
+                    <div class="amou">Amounts</div>
+                    <div>$18</div>
+                </div>
+
+            </div>
+
+
+            <div class="imgg">
+                <div class="imggrid img2"></div>
+                <div class="food">Kenya food</div>
+                <div class="amo">
+                    <div class="amou">Amounts</div>
+                    <div>$18</div>
+                </div>
+
+            </div>
+
+
+
+            <div class="imgg">
+                <div class="imggrid img3"></div>
+                <div class="food">Niger food</div>
+                <div class="amo">
+                    <div class="amou">Amounts</div>
+                    <div>$18</div>
+                </div>
+
+            </div>
+
+
+
+            <div class="imgg">
+                <div class="imggrid img4"></div>
+                <div class="food">Togo food</div>
+                <div class="amo">
+                    <div class="amou">Amounts</div>
+                    <div>$18</div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="line">
+
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                    <th>Price (USD)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ghana jollof</td>
+                    <td>food</td>
+                    <td>150</td>
+                    <td>1200.00</td>
+                </tr>
+                <tr>
+                    <td>niger soop</td>
+                    <td>food</td>
+                    <td>300</td>
+                    <td>25.50</td>
+                </tr>
+                <tr>
+                    <td>kenya turks</td>
+                    <td>food</td>
+                    <td>75</td>
+                    <td>99.99</td>
+                </tr>
+                <tr>
+                    <td>togo beef</td>
+                    <td>food</td>
+                    <td>120</td>
+                    <td>89.00</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="btn">
+            <button>Track Your Order</button>
+        </div>
+    </section>
+</body>
+
+</html>

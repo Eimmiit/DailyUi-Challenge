@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily analytic Ui</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+        }
+
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        section {
+            max-width: 400px;
+            margin: 10px auto;
+            background-color: aliceblue;
+            border-radius: 15px;
+            box-shadow: 2px 2px 5px ;
+        }
+
+        .firstDivTop {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 20px 20px 20px;
+        }
+
+
+        .firstp {
+            margin-bottom: 10px;
+            color: rgb(102, 145, 182);
+        }
+
+        .firsth {
+            margin-bottom: 10px;
+            color: rgb(19, 64, 107);
+            font-size: 1.3rem;
+            font-family: 'pacifico', serif;
+        }
+
+        .ttopImg {
+            width: 45px;
+            height: 45px;
+            background: url(Good_Food_Display_-_NCI_Visuals_Online.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            padding: 5px;
+            padding: 20px;
+
+        }
+
+        .grid-item {
+            background-color: white;
+            padding: 5px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            box-shadow: 2px 4px 10px rgb(114, 219, 245);
+        }
+
+        .gridg {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin: 5px 0px;
+
+        }
+
+        .gridi {
+            background-color: rgb(109, 211, 236);
+            height: 30px;
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .gridt {
+            color: rgb(51, 84, 112);
+            font-weight: 600;
+        }
+
+        .gridhh {
+            font-size: 2rem;
+        }
+
+        .gridhhh {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            color: rgb(39, 156, 10);
+            align-items: center;
+        }
+
+        .gridii {
+            border-radius: 50%;
+            background-color: rgb(39, 156, 10);
+            height: 27px;
+            width: 27px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.8rem;
+            color: white;
+
+        }
+
+        .downh {
+            color: red;
+        }
+
+        .downnh {
+            color: white;
+            background-color: red;
+        }
+
+        .mainDiv {
+            height: 200px;
+            background-color: royalblue;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .mainDiv4 {
+            font-size: 1.6rem;
+            padding: 20px 10px 0px 10px;
+            color: white;
+        }
+
+        .mainDiv44 {
+            display: flex;
+            gap: 10px;
+            padding: 5px 10px 0px 10px;
+            color: white;
+        }
+        .textete{
+            margin: 20px 10px;
+        }
+
+        .downlh {
+            font-size: 1.6rem;
+            padding: 0px 20px;
+        }
+
+        .chart{
+            height: 70px;
+            margin-top: -68px;
+            padding-left: 50px;
+            display: flex;
+            gap: 10px;
+            align-items: end;
+        }
+        .chartb{
+            width: 10px;
+            background-color: aliceblue;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+
+        .char1, .char3, .char6, .char10{
+            height: 40%;
+        }
+        .char2, .char4, .char5, .char7{
+            height: 80%;
+        }
+        .char8, .char9{
+            height: 50%;
+        }
+
+        .socd {
+            display: flex;
+            padding: 20px;
+            background-color: rgb(208, 232, 240);
+            margin: 20px;
+            border-radius: 10px;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 1px 1px 10px rgb(142, 184, 187);
+        }
+
+        .soci {
+            height: 40px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: rgb(102, 168, 189);
+            color: white;
+
+        }
+
+        .socsnap {
+            background-color: yellow;
+            color: black;
+        }
+        .textline{
+            display: flex;
+            color: aliceblue;
+            align-items: flex-end;
+        }
+        .line{
+            width: 100%;
+            height: 1px;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <Section>
+        <div class="firstDivTop">
+            <div>
+                <p class="firstp">
+                    Hello
+                </p>
+                <h4 class="firsth">
+                    Hello Rawat
+                </h4>
+            </div>
+            <div class="ttopImg">
+
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="gridg">
+                    <div class="gridi">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
+                    <div class="gridt">
+                        flowers
+                    </div>
+                </div>
+                <h3 class="gridhh">43.67k</h3>
+                <div class="gridhhh">
+                    <div class="gridii">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                    <div>
+                        26.80%
+                    </div>
+                </div>
+
+            </div>
+            <div class="grid-item">
+
+                <div class="gridg">
+                    <div class="gridi">
+                        <i class="fa-solid fa-infinity"></i>
+                    </div>
+                    <div class="gridt">
+                        Engagement
+                    </div>
+                </div>
+                <h3 class="gridhh">43.67k</h3>
+                <div class="gridhhh">
+                    <div class="gridii">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                    <div>
+                        26.80%
+                    </div>
+                </div>
+
+            </div>
+            <div class="grid-item">
+
+                <div class="gridg">
+                    <div class="gridi">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="gridt">
+                        Total Views
+                    </div>
+                </div>
+                <h3 class="gridhh">43.67k</h3>
+                <div class="gridhhh downh">
+                    <div class="gridii downnh">
+                        <i class="fa-solid fa-down-long"></i>
+                    </div>
+                    <div>
+                        26.80%
+                    </div>
+                </div>
+
+            </div>
+            <div class="grid-item">
+
+                <div class="gridg">
+                    <div class="gridi">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </div>
+                    <div class="gridt">
+                        Likes
+                    </div>
+                </div>
+                <h3 class="gridhh">43.67k</h3>
+                <div class="gridhhh">
+                    <div class="gridii">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                    <div>
+                        26.80%
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mainDiv">
+            <h4 class="mainDiv4">Profile Discovery</h4>
+            <div class="mainDiv44">
+                <i class="fa-solid fa-up-right-from-square"></i>
+                <p>26.84% (From Last Month) </p>
+            </div>
+
+
+            <div class="textete">
+                <div class="textline">
+                    <div>
+                        5k
+                    </div>
+                    <div class="line">
+                        
+                    </div>
+                </div>
+                <div class="textline">
+                    <div>
+                        3k
+                    </div>
+                    <div class="line">
+                        
+                    </div>
+                </div>
+                <div class="textline">
+                    <div>
+                        1k
+                    </div>
+                    <div class="line">
+                        
+                    </div>
+                </div>
+                <div class="chart">
+
+                    <div class="chartb char1"></div>
+                    <div class="chartb char2"></div>
+                    <div class="chartb char3"></div>
+                    <div class="chartb char4"></div>
+                    <div class="chartb char5"></div>
+                    <div class="chartb char6"></div>
+                    <div class="chartb char7"></div>
+                    <div class="chartb char8"></div>
+                    <div class="chartb char9"></div>
+                    <div class="chartb char10"></div>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="downlh">
+            Schedule Post
+        </h4>
+        <div class="socd">
+            <div class="soci">
+                <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div>
+                <h4>Mohammed hosain</h4>
+                <p>facebook</p>
+            </div>
+        </div>
+        <div class="socd">
+            <div class="soci socsnap">
+                <i class="fa-brands fa-snapchat"></i>
+            </div>
+            <div>
+                <h4>Mohammed hosain</h4>
+                <p>Snapchat </p>
+            </div>
+        </div>
+    </Section>
+</body>
+
+</html>

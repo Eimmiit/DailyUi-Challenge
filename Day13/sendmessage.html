@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Message board</title>
+    
+    <!-- font awesome link and font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Knewave&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Spray+Paint&display=swap"
+        rel="stylesheet">
+        
+        <!-- styling -->
+        <style>
+            
+            body{
+                margin:10px;
+                font-family: ariel;
+                background-color: whitesmoke;
+            }
+            #overallSection{
+                max-width: 350px;
+                margin:40px auto;
+                background-color: white;
+                border-radius: 10px;
+                border:1px solid #00800248;
+                
+            }
+            #overallHead{
+                width:100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height:45px;
+                margin: 30px 0px 10px 0px;
+                background-color: green;
+                padding: 5px 0px;
+                color: white;
+                
+                
+            }
+            
+            .leftSideHead{
+                display: flex;
+                align-items: center;
+                gap:10px;
+                padding-left: 10px;
+                
+            }<
+            .leftSideHeadImage{
+                height: 36px;
+                width: 36px;
+                border-radius: 50%;
+                padding: 2px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid white;
+                
+            }
+            .imageInsideLeftHead{
+                height: 35px;
+                width: 35px;
+                border-radius: 50%;
+            }
+            .leftSideHeadText{
+                font-size: 0.9rem;
+                font-weight: 700;
+            }
+            
+            .rightSideHead{
+                display: flex;
+                gap:10px;
+                padding-right: 10px;
+            }
+            .firstTopDate, .secondTopDate{
+                text-align: center;
+                font-weight: 700;
+                font-size: 0.6rem;
+                margin: 20px 0px;
+                color: #000000a7;
+            }
+            .chatArea{
+                display: flex;
+                gap:10px;
+                
+                
+            }
+            .chatOne{
+                justify-content: flex-end;
+                align-items: center;
+                padding-right: 20px;
+                margin-top: 30px;
+                
+                
+            }
+            .chatTwo{
+                justify-content: flex-start;
+                align-items: center;
+                padding-left: 20px;
+                margin-top: 30px;
+                
+            }
+            .timeInChatOne, .timeInChatTwo{
+                font-size: 0.7rem;
+                color: #000000a7;
+                font-weight: 600;
+            }
+            .messageInChatOne, .messageInChatTwo{
+                background-color: green;
+                padding: 8px;
+                border-radius: 10px;
+                font-size: 0.8rem;
+                font-weight: 600;
+                color: white;
+            }
+            .divImageInChatOne, .divImageInChatTwo{
+                height: 34px;
+                width: 34px;
+                border-radius: 50%;
+                padding: 2px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid green;
+            }
+            .imageInChatOne, .imageInChatTwo{
+                height: 33px;
+                width: 33px;
+                border-radius: 50%;
+            }
+            #foot{
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+                color: #000000a7;
+                align-items: center;
+                margin-top: 40px;
+            }
+            .innerFoot{
+                display: flex;
+                padding: 10px;
+                border: 1px solid #000000a7;
+                border-radius: 20px;
+                gap:5px;
+                align-items: center;
+            }
+            .innerFootTwoDeInput{
+                border: none;
+            }
+            
+        </style>
+</head>
+<body>
+    <section id="overallSection">
+        <!-- Top head -->
+        <div id="overallHead">
+            <!-- left side -->
+            <div class="leftSideHead">
+                <div class="leftSideHeadArrow"><i class="fa-solid fa-arrow-left"></i></div>
+                <div class="leftSideHeadImage"> <img src="Saudi Prince.jpg" alt="" class="imageInsideLeftHead"></img></div>
+                <div class="leftSideHeadText"> Saudi Prince 🤴</div>
+                
+            </div>
+            <!-- right side-->
+            <div class="rightSideHead">
+                <div><i class="fa-solid fa-phone"></i></div>
+                <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div><i class="fa-regular fa-circle-dot"></i></div>
+                
+            </div>
+            
+        </div>
+        <!-- top date -->
+        <div class="firstTopDate"> SATURDAY, JULY 2025</div>
+        <!-- chat area -->
+        <!-- area 1.1 -->
+        <div class="chatArea chatOne">
+            <div class="timeInChatOne">5:32pm</div>
+            <div class="messageInChatOne">Hello there how are you.</div>
+            <div class="divImageInChatOne"><img src="ElonMusk.jpg" alt="" class="imageInChatOne"></img></div>
+            
+        </div>
+        <!-- area 1.2 -->
+        <div class="chatArea chatTwo">
+            <div class="divImageInChatTwo"><img src="Saudi Prince.jpg" alt="" class="imageInChatTwo"></img></div>
+            <div class="messageInChatTwo">Am good and you</div>
+            <div class="timeInChatTwo">5:37pm</div>
+            
+        </div>
+        
+        <!-- area 2.1-->
+        <div class="chatArea chatOne">
+            <div class="timeInChatOne">5:41pm</div>
+            <div class="messageInChatOne"> keep up the good work</div>
+            <div class="divImageInChatOne"><img src="ElonMusk.jpg" alt="" class="imageInChatOne"></img></div>
+            
+        </div>
+        <!-- area 2.2 -->
+        <div class="chatArea chatTwo">
+            <div class="divImageInChatTwo"><img src="Saudi Prince.jpg" alt="" class="imageInChatTwo"></img></div>
+            <div class="messageInChatTwo">Oh Thanks Man<br /> I really Appreciate</div>
+            <div class="timeInChatTwo">5:52pm</div>
+            
+        </div>
+        
+        <!-- Day -->
+        <div class="secondTopDate">Today</div>
+        <!-- area 3.1 -->
+        <div class="chatArea chatOne">
+            <div class="timeInChatOne">5:41pm</div>
+            <div class="messageInChatOne">It nice seeing you grow 💗💗 </div>
+            <div class="divImageInChatOne"><img src="ElonMusk.jpg" alt="" class="imageInChatOne"></img></div>
+            
+        </div>
+        
+        <!-- footer -->
+        <div id="foot">
+            <div class="outerFoot outerFootOne"><i class="fa-solid fa-plus"></i></div>
+            
+            <div class="innerFoot">
+                <!-- first mid div -->
+                    <div class="innerFootTwo innerFootTwoUn"><i class="fa-solid fa-face-smile"></i></div>
+                    <div class="innerFootTwo innerFootTwoDe"><input type="search" name="search" id="" placeholder="type in your message" class="innerFootTwoDeInput"></div>
+                    <div class="innerFootTwo innerFootTwoTroi"><i class="fa-solid fa-paperclip"></i></div>
+                    <div class="innerFootTwo innerFootTwoQuart"><i class="fa-solid fa-camera-retro"></i></div>
+            </div>
+            
+            <div class="outerFoot outerFootTwo"><i class="fa-solid fa-microphone"></i></div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </section>
+</body>
+</html>

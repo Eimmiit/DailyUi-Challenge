@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        body {
+            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #overAllSection {
+            max-width: 350px;
+            margin: 10px auto;
+            border-radius: 20px;
+            border: 1px rgb(3, 54, 75) solid;
+        }
+
+        #mainHeader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .fa-solid {
+            font-size: 1.5rem;
+            color: skyblue;
+        }
+
+        
+
+        .timer {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: white;
+            text-shadow:
+                -1px 1px skyblue,
+                1px -1px skyblue;
+        }
+
+        .upper {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        #line {
+            width: 100%;
+            margin-top: 100px;
+            margin-bottom: 0px;
+
+
+
+
+        }
+
+        .twoDiv {
+            margin-top: 30px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: rgb(3, 54, 75);
+        }
+
+        .liney {
+            width: 100px;
+            height: 2px;
+            background-color: rgb(3, 54, 75);
+            margin-top: 10px;
+        }
+
+        .rightline {
+            justify-self: end;
+        }
+
+        .leftline {
+            justify-self: start;
+        }
+
+        .oneline {
+            padding-left: 20px;
+            margin-right: 120px;
+
+        }
+
+        .twoline {
+            padding-right: 20px;
+            margin-left: 120px;
+
+
+        }
+
+        .threeline {
+            padding-left: 20px;
+            margin-right: 100px;
+        }
+
+        .fourline {
+            padding-right: 20px;
+            margin-left: 100px;
+        }
+
+        .fiveline {
+            padding-left: 20px;
+            margin-right: 80px;
+        }
+
+        .sixline {
+            padding-right: 20px;
+            margin-left: 80px;
+
+        }
+
+        .sevenline {
+            padding-left: 20px;
+            margin-right: 60px;
+        }
+
+        .eightline {
+            padding-right: 20px;
+            margin-left: 60px;
+        }
+
+        .nineline {
+            padding-left: 20px;
+            margin-right: 40px;
+        }
+
+        .tenline {
+            padding-right: 20px;
+            margin-left: 40px;
+        }
+
+        .elevenline {
+            padding-left: 20px;
+            margin-right: 20px;
+        }
+
+        .twelveline {
+
+            padding-right: 20px;
+            margin-left: 20px;
+        }
+
+        .thirteenline {
+            padding-left: 20px;
+            margin-right: 0px;
+        }
+
+        .fourteenline {
+            padding-right: 20px;
+            margin-left: 0px;
+        }
+
+        .fifteenline {
+            padding-left: 20px;
+            margin-right: 20px;
+
+        }
+
+        .sixteenline {
+            padding-right: 20px;
+            margin-left: 20px;
+        }
+
+        .seventeenline {
+            padding-left: 20px;
+            margin-right: 40px;
+        }
+
+        .eighteenline {
+            padding-right: 20px;
+            margin-left: 40px;
+        }
+
+        .nineteenline {
+            padding-left: 20px;
+            margin-right: 60px;
+        }
+
+        .twentyline {
+            padding-right: 20px;
+            margin-left: 60px;
+        }
+
+        .twenty-oneline {
+            padding-left: 20px;
+            margin-right: 80px;
+        }
+
+        .twenty-twoline {
+            padding-right: 20px;
+            margin-left: 80px;
+        }
+
+        .twenty-threeline {
+            padding-left: 20px;
+            margin-right: 100px;
+        }
+
+        .twenty-fourline {
+            padding-right: 20px;
+            margin-left: 100px;
+        }
+
+        .twenty-fiveline {
+            padding-left: 20px;
+            margin-right: 120px;
+        }
+
+        .twenty-sixline {
+            padding-right: 20px;
+            margin-left: 100px;
+        }
+
+        #mainFoot {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 20px;
+            align-items: center;
+            color: skyblue;
+        }
+
+        button {
+            padding: 10px 30px;
+            border-radius: 20px;
+            border: none;
+            background-color: skyblue;
+            color: white;
+        }
+        .cont{
+            text-align: center;
+            padding: 15px;
+            border-radius: 20px;
+            border: 1px solid skyblue;
+            margin-top: -200px;
+            margin-bottom: 150px;
+            background-color: skyblue;
+            margin-right: 20px;
+            margin-left: 20px;
+            color: white;
+            font-size: 1.2rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section id="overAllSection">
+        <div id="overAllDiv">
+            <header id="mainHeader">
+
+                <div><i class="fa-solid fa-arrow-left"></i></div>
+                <div class="timer">Timer</div>
+                <div><i class="fa-solid fa-gear"></i></div>
+            </header>
+            <div class="upper">
+                <div class="oneDiv">Time Remaining</div>
+                <div class="twoDiv">24:36</div>
+            </div>
+            <div id="line">
+                <div>
+                    <div class="liney rightline oneline"></div>
+                    <div class="liney leftline twoline"></div>
+                    <div class="liney rightline threeline"></div>
+                    <div class="liney leftline fourline"></div>
+                    <div class="liney rightline fiveline"></div>
+                    <div class="liney leftline sixline"></div>
+                    <div class="liney rightline sevenline"></div>
+                    <div class="liney leftline eightline"></div>
+                    <div class="liney rightline nineline"></div>
+                    <div class="liney leftline tenline"></div>
+                    <div class="liney rightline elevenline"></div>
+                    <div class="liney leftline twelveline"></div>
+                    <div class="liney rightline thirteenline"></div>
+                </div>
+                <div>
+                    <div class="liney leftline fourteenline "></div>
+                    <div class="liney rightline fifteenline"></div>
+                    <div class="liney leftline sixteenline"></div>
+                    <div class="liney rightline seventeenline"></div>
+                    <div class="liney leftline eighteenline"></div>
+                    <div class="liney rightline nineteenline"></div>
+                    <div class="liney leftline twentyline"></div>
+                    <div class="liney rightline twenty-oneline"></div>
+                    <div class="liney leftline twenty-twoline"></div>
+                    <div class="liney rightline twenty-threeline"></div>
+                    <div class="liney leftline twenty-fourline"></div>
+                    <div class="liney rightline twenty-fiveline"></div>
+                    <div class="liney leftline twenty-sixline"></div>
+                </div>
+            </div>
+            <div class="cont">
+                Continue
+            </div>
+            <footer id="mainFoot">
+                <div><i class="fa-solid fa-arrows-rotate"></i></div>
+                <div><button>Pause</button></div>
+                <div><i class="fa-solid fa-volume-xmark"></i></div>
+            </footer>
+        </div>
+    </section>
+</body>
+
+</html>

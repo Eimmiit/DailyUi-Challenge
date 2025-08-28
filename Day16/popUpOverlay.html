@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop up overlay</title>
+
+    <style>
+        body {
+            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .overallDiv {
+            max-width: 350px;
+            margin: 30px auto;
+            height: 200px;
+            background-color: rgb(247, 240, 240);
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 30px;
+
+            background: linear-gradient(90deg,
+                    #89f7fe,
+                    #66a6ff
+                );
+                box-shadow: 1px 1px 10px rgb(133, 89, 89);
+
+
+
+        }
+
+        h2 {
+
+            color: white;
+            text-align: center;
+            font-size: 2rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .search {
+            text-align: center;
+            border-radius: 900px;
+            height: 50px;
+            display: flex;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 1px 1px 1px rgb(75, 73, 1);
+
+
+        }
+        .searc {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+
+
+        }
+
+
+        input {
+            border: none;
+            width: 100%;
+            font-size: 0.7rem;
+            padding-left: 10px;
+        }
+
+        button {
+            border: none;
+            width: 90%;
+            border-radius: 50px;
+            box-shadow: 1px 1px 20px rgb(141, 139, 3);
+            background-color: yellow;
+            color: skyblue;
+        }
+      
+        .btn{
+            width: 100%;
+            border-radius: 1px;
+            box-shadow: none;
+            
+        }
+        P{
+            margin-top: 30px;
+            font-size: 0.7rem;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overallDiv">
+        <div></div>
+        <h2>Stock Up On Food</h2>
+        <div class="search">
+            <input type="search">
+            <button>Search</button>
+        </div>
+        <p>No worries we won't call you, It just for you to activate a promocode</p>
+
+    </div>
+
+ <div class="overallDiv">
+        <div></div>
+        <h2>Stock Up On Food</h2>
+        <div class="searc ">
+            <input type="search" >
+            <button class="btn">Search</button>
+        </div>
+        <p>No worries we won't call you, It just for you to activate a promocode</p>
+
+    </div>
+
+</body>
+
+</html>

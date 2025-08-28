@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Knewave&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Spray+Paint&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: royalblue;
+        }
+
+        #overallSection {
+            width: 350px;
+            margin: 30px auto;
+            background-color: rgb(0, 0, 0);
+            border-radius: 15px;
+        }
+
+        img {
+            border-radius: 15px;
+            -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+            mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        }
+
+        #secondSection {
+            width: 330px;
+            margin: 10px auto;
+        }
+
+        .header {
+            display: flex;
+            gap: 250px;
+            flex-direction: column;
+            height: 100px;
+            position: absolute;
+            top: 50px;
+            height: 100%;
+        }
+
+        .smallHead {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 12px;
+        }
+
+        .fa-grip-lines,
+        .fa-child,
+        .response {
+            color: white;
+        }
+
+        .fa-heart {
+            color: red;
+        }
+
+        .profileName {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+        }
+
+        h3 {
+            margin: 0;
+            color: white;
+        }
+
+        .role {
+            margin: 3px 0px;
+            font-size: 10px;
+            color: white;
+        }
+
+        .fa-child {
+            font-size: 20px;
+        }
+
+
+        .starSec {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+        }
+
+        .fa-star {
+            color: rgb(255, 251, 0);
+            font-size: 12px;
+        }
+
+        .starred {
+            color: white
+        }
+
+        .mes {
+            margin: 0;
+            font-size: 11px;
+            color: white;
+        }
+
+        h4 {
+            margin: 5px 0px 0px 0px;
+            font-size: 10px;
+            color: white;
+        }
+
+        .mainBody {
+            color: white;
+            margin: 0;
+            font-size: 9px;
+            width: 250px;
+            text-align: justify;
+        }
+
+        .socials {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .socials>*:nth-child(1) {
+            color: rgb(71, 129, 216);
+            font-weight: 700;
+        }
+
+        .socials>*:nth-child(2) {
+            color: rgb(71, 129, 216);
+        }
+
+        .socials>*:nth-child(3) {
+            color: rgb(71, 129, 216);
+        }
+
+        .socials>*:nth-child(4)>button {
+            background-color: rgb(71, 129, 216);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 10px;
+        }
+
+        .fllow {
+            margin: 25px 0px;
+        }
+
+        .follow-button {
+            background-color: rgb(71, 129, 216);
+            padding: 10px 30px;
+            border: none;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            font-size: 10px;
+            color: white;
+        }
+
+        .fa-twitter {
+            color: rgb(71, 129, 216);
+        }
+    </style>
+</head>
+
+<body>
+    <section id="overallSection">
+        <img src="ElonMusk.jpg" alt="main image" width="350">
+        <div id="secondSection">
+            <div class="header">
+                <div>
+                    <i class="fa-solid fa-grip-lines"></i>
+                </div>
+                <div class="smallHead">
+                    <i class="fa-solid fa-heart"><div>85k</div></i>
+                    <div class="response">
+                        <i class="fa-solid fa-reply-all"></i>
+                        <div>25M</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="profileName">
+                    <h3>Elon Musk <span><i class="fa-brands fa-twitter"></i></span></h3>
+                    <div>
+                        <i class="fa-solid fa-child"></i>
+                    </div>
+                </div>
+                <p class="role">Businessman</p>
+                <div class="starSec">
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star starred"></i>
+                    </div>
+                    <div>
+                        <p class="mes">Message</p>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <h4>Profile:</h4>
+                <p class="mainBody">
+                    Elon Musk was born on June 28, 1971, in Pretoria, South Africa. He taught himself computer
+                    programming and at age twelve sold the computer code for a video game. He moved to Canada in 1988
+                    and is a graduate of the University of Pennsylvania, with both Bachelor of Arts and Bachelor of
+                    Science Degrees.
+                </p>
+            </div>
+            <div class="socials">
+                <div>Linked<i class="fa-brands fa-linkedin"></i></div>
+                <div><i class="fa-brands fa-square-instagram"></i></div>
+                <div><i class="fa-brands fa-square-facebook"></i></div>
+                <div><button>connect</button></div>
+            </div>
+            <div class="fllow">
+                <button class="follow-button">Follow <i class="fa-solid fa-id-card-clip"></i></button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

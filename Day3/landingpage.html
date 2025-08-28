@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <style>
+        body {
+            margin: 5px;
+            background-color: royalblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .mobileHead {
+            display: none;
+        }
+
+        #overallSection {
+            width: 80%;
+            margin: 40px auto;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #bigHeader {
+            display: flex;
+            justify-content: space-between;
+            font-family: Montserrat;
+            font-weight: bold;
+        }
+
+        .leftHeader {
+            display: flex;
+        }
+
+        .rightHeader {
+            display: flex;
+            align-items: center;
+        }
+
+        .smallLeftHeader {
+            padding-right: 40px;
+        }
+
+        .mainHead {
+            color: white;
+        }
+
+        .smallRightHeader {
+            padding-left: 40px;
+        }
+
+        .leftBtn {
+            color: white;
+            background-color: cyan;
+            border-radius: 25px;
+            padding: 8px 20px;
+            border: none;
+            font-family: Montserrat;
+            font-weight: bold;
+        }
+
+        #main {
+            display: flex;
+            margin-top: 40px;
+            justify-content: space-between;
+        }
+
+        h1 {
+            font-size: 5rem;
+            margin: 20px 0px 0px 0px;
+            color: white;
+            font-family: 'roboto', serif;
+        }
+
+        p {
+            color: white;
+            margin: 5px;
+            font-family: Montserrat;
+        }
+
+
+        .downBtn {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .divBtn {
+            padding-right: 20px;
+        }
+
+        .ddBtn {
+            padding: 8px 50px 8px 20px;
+            background-color: white;
+            border-radius: 40px;
+            border: none;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            justify-content: left;
+
+        }
+
+        .fa-apple-whole,
+        .fa-play {
+            padding-right: 10px;
+            margin: 0px;
+            font-size: 30px;
+            color: royalblue;
+        }
+
+        .lowerIcon {
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .llIcon {
+            margin-right: 10px;
+            background-color: rgb(0, 0, 0, 0.4);
+            padding: 10px;
+            border-radius: 50px;
+            color: white;
+        }
+
+        @media(max-width: 768px) {
+            #overallSection {
+                width: 90%;
+                /* Make it wider on smaller screens */
+                margin: 20px auto;
+                /* Reduce top/bottom margin */
+            }
+
+            #bigHeader {
+                display: none;
+            }
+
+            .mobileHead {
+                display: flex;
+                justify-content: space-between;
+                color: white;
+            }
+
+            #main {
+                display: flex;
+                margin-top: 40px;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 3rem;
+            }
+
+            p {
+                text-align: center;
+            }
+
+            img {
+                margin-top: 10px;
+                width: 700px;
+            }
+
+            .divBtn {
+                padding-right: 0px;
+            }
+
+            .ddaBtn {
+                padding-right: 5px;
+            }
+
+            .ddbBtn {
+                padding-left: 5px;
+            }
+
+            .ddBtn {
+                padding: 8px 50px 8px 20px;
+                width: 100%;
+                height: 45px;
+
+
+            }
+            .lowerIcon {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        }
+
+        @media(max-width: 410px) {
+            #overallSection {
+                width: 80%;
+                margin: 20px auto;
+            }
+
+            #bigHeader {
+                display: none;
+            }
+
+            .mobileHead {
+                display: flex;
+                justify-content: space-between;
+                color: white;
+            }
+
+            #main {
+                display: flex;
+                margin-top: 40px;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 2.5rem;
+
+            }
+
+            p {
+                text-align: center;
+                font-size: 0.7rem;
+                line-height: 18px;
+            }
+
+            img {
+                margin-top: 10px;
+                width: 600px;
+            }
+
+            .divBtn {
+                padding-right: 0px;
+            }
+
+            .ddaBtn {
+                padding-right: 5px;
+            }
+
+            .ddbBtn {
+                padding-left: 5px;
+            }
+
+            .ddBtn {
+                padding: 8px 0px 8px 20px;
+                width: 100%;
+                height: 45px;
+
+            }
+
+            .applePlay {
+                width: 100px;
+            }
+
+            .applePlays {
+                font-size: 0.7rem;
+            }
+            .lowerIcon {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="overallSection">
+        <div class="mobileHead">
+            <div><i class="fa-solid fa-mountain-city"></i></div>
+            <div><i class="fa-solid fa-grip-lines"></i></div>
+
+        </div>
+        <header id="bigHeader">
+            <div class="leftHeader">
+                <div class="smallLeftHeader"> <a href="#" class="mainHead"><i class="fa-solid fa-mountain-city"></i></a>
+                </div>
+                <div class="smallLeftHeader"> <a href="#" class="mainHead">Home</a></div>
+                <div class="smallLeftHeader"><a href="#" class="mainHead">Articles</a></div>
+                <div class="smallLeftHeader"><a href="#" class="mainHead">News</a></div>
+                <div class="smallLeftHeader"><a href="#" class="mainHead">Expert</a></div>
+            </div>
+            <div class="rightHeader">
+                <div class="smallRightHeader"><a href="" class="mainHead">SIGN IN</a></div>
+                <div class="smallRightHeader"><button class="leftBtn">SIGN UP</button></div>
+            </div>
+        </header>
+        <div id="main">
+            <div>
+                <div>
+                    <h1>Your Healthy Life <br>
+                        Grow Here</h1>
+                    <p>Uplife is the first holistics personalise digital <br> health solution
+                        that critical habits <br> and connects you to your healthy <br> ecosystem
+                    </p>
+                </div>
+                <div class="downBtn">
+                    <div class="divBtn ddaBtn">
+                        <button class="ddBtn">
+                            <div><i class="fa-solid fa-apple-whole"></i></div>
+                            <div class="applePlay">
+                                <div class="applePlays">Download on the</div>
+                                <div class="applePlays">App store</div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="divBtn ddbBtn">
+                        <button class="ddBtn">
+                            <div><i class="fa-solid fa-play"></i></div>
+                            <div class="applePlay">
+                                <div class="applePlays">Get In On</div>
+                                <div class="applePlays">Google Play</div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="phoneMockup.png" alt="Phone mockup" width="500">
+            </div>
+        </div>
+        <div class="lowerIcon">
+            <div class="llIcon"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="llIcon"><i class="fa-brands fa-x-twitter"></i></div>
+            <div class="llIcon"><i class="fa-solid fa-medal"></i></div>
+
+        </div>
+    </section>
+</body>
+
+</html>

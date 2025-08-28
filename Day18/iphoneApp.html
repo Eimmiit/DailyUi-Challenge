@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iphone UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgb(2, 0, 17);
+            margin: 10px;
+            font-family: roboto;
+
+        }
+
+        #circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: -1000;
+            margin-top: -300px;
+        }
+
+        #firstSection {
+            max-width: 400px;
+            margin: -300px auto;
+            border-radius: 40px;
+            border: 5px solid rgba(255, 255, 255, 0.18);
+            background: rgba(255, 255, 255, 0.08);
+            display: flex;
+            flex-direction: column;
+            height: 800px;
+            max-height: 90vh;
+            overflow: hidden;
+
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+            transition: all 0.3s ease-in-out;
+
+
+
+
+        }
+
+        #mainHeader {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .topHeader {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            padding: 10px 30px;
+            align-items: center;
+            font-size: 0.8rem;
+            color: white;
+        }
+
+        .ttopBtn {
+            border-radius: 20px;
+            padding: 8px 15px;
+        }
+
+        .ttopBtn1 {
+            border: none;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+        }
+
+        .ttopBtn2,
+        .ttopBtn3,
+        .ttopBtn4 {
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .topRightHeader {
+            display: flex;
+            gap: 10px;
+        }
+
+        .xplore {
+            font-weight: 700;
+        }
+
+        #mainDivSection {
+            max-width: 380px;
+            margin: 20px auto;
+
+
+            overflow-y: auto;
+            flex-grow: 1;
+            padding-bottom: 20px;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .topNav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 10px;
+            color: white;
+        }
+
+        .topBtn {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+        }
+
+        h3 {
+            margin: 35px 0px 0px 0px;
+            color: white;
+            font-weight: 700;
+        }
+
+        p {
+            margin: 5px 0px 0px 0px;
+            color: rgb(255, 255, 255, 0.5);
+            font-size: 0.8rem;
+            font-weight: 100;
+        }
+
+        .Number {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.08);
+            display: flex;
+            margin-top: 10px;
+            align-items: center;
+            border-radius: 20px;
+            padding: 5px 25px;
+            box-sizing: border-box;
+            gap: 10px;
+            color: rgb(255, 255, 255);
+        }
+
+        .Daily {
+            font-weight: 600;
+        }
+
+        .daily2 {
+            font-weight: 100;
+            font-size: 0.8rem;
+            color: rgb(255, 255, 255, 0.5);
+        }
+
+        .bodyIcon {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footery {
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+            z-index: 10;
+            flex-shrink: 0;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .foot {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+            border-radius: 0 0 35px 35px;
+
+        }
+
+        .fot {
+            margin: 5px 0px 20px 0px;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: transparent;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgb(255, 255, 255, 0.5);
+        }
+
+        .fa-star {
+            border-radius: 50%;
+            height: 45px;
+            width: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: radial-gradient(circle,
+                    #f0f8ff 0%,
+                    #add8e6 30%,
+                    #87ceeb 60%,
+                    #4682b4 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="circle"><img src="rice.png" alt="rice"></div>
+    <section id="firstSection">
+        <header id="mainHeader">
+            <div class="topHeader">
+                <div>9:30</div>
+                <div class="topRightHeader">
+                    <div><i class="fa-brands fa-servicestack"></i></div>
+                    <div><i class="fa-solid fa-wifi"></i></div>
+                    <div><i class="fa-solid fa-battery-three-quarters"></i></div>
+                </div>
+            </div>
+        </header>
+        <div id="mainDivSection">
+            <div class="topNav">
+                <div><i class="fa-solid fa-bars-staggered"></i></div>
+                <div class="xplore">Explore</div>
+                <div><i class="fa-brands fa-searchengin"></i></div>
+            </div>
+            <div class="topBtn">
+                <div><button class="ttopBtn ttopBtn1">Top Picks</button></div>
+                <div><button class="ttopBtn ttopBtn2">Rice</button></div>
+                <div><button class="ttopBtn ttopBtn3">Vegetable</button></div>
+                <div><button class="ttopBtn ttopBtn4">Cassava</button></div>
+            </div>
+            <div>
+                <h3>
+                    Trending Foods
+                </h3>
+                <p>
+                    Most Popular Foods from Our Community
+                </p>
+            </div>
+            <div class="Number">
+                <h4>
+                    1
+                </h4>
+                <div class="bodyIcon">
+                    <i class="fa-solid fa-image"></i>
+                </div>
+                <div>
+                    <div class="Daily">Vegetable Soup</div>
+                    <div class="daily2">By Bourdairti Roman</div>
+                </div>
+            </div>
+            <div class="Number">
+                <h4>
+                    2
+                </h4>
+                <div class="bodyIcon">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <div>
+                    <div class="Daily">Jollof Rice</div>
+                    <div class="daily2">By Benito Musolini</div>
+                </div>
+            </div>
+            <div class="Number">
+                <h4>
+                    3
+                </h4>
+                <div class="bodyIcon">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                </div>
+                <div>
+                    <div class="Daily">Cassava Flour(garri)</div>
+                    <div class="daily2">By Ijebu Clan</div>
+                </div>
+            </div>
+            <div class="Number">
+                <h4>
+                    4
+                </h4>
+                <div class="bodyIcon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                    <div class="Daily">Barbecue Garlour</div>
+                    <div class="daily2">By Sydney Reign</div>
+                </div>
+            </div>
+            <div class="Number">
+                <h4>
+                    5
+                </h4>
+                <div class="bodyIcon">
+                    <i class="fa-solid fa-scale-unbalanced"></i>
+                </div>
+                <div>
+                    <div class="Daily">Daily Productivity</div>
+                    <div class="daily2">By Bourdairti Roman</div>
+                </div>
+            </div>
+            <div class="Number">
+                <h4>
+                    6
+                </h4>
+                <div class="bodyIcon">
+                    <i class="fa-solid fa-stethoscope"></i>
+                </div>
+                <div>
+                    <div class="Daily">Daily Productivity</div>
+                    <div class="daily2">By Bourdairti Roman</div>
+                </div>
+            </div>
+        </div>
+        <footer id="footery">
+            <div class="foot">
+                <div class="fot"><i class="fa-solid fa-house-user"></i></div>
+                <div class="fot"><i class="fa-solid fa-compass"></i></div>
+                <div class="fot"><i class="fa-solid fa-star"></i></div>
+                <div class="fot"><i class="fa-solid fa-message"></i></div>
+                <div class="fot"><i class="fa-solid fa-id-badge"></i></div>
+
+            </div>
+
+        </footer>
+    </section>
+
+
+
+
+
+
+
+    <section>
+        <header>
+
+        </header>
+    </section>
+    <section>
+        <header>
+
+        </header>
+    </section>
+</body>
+
+</html>

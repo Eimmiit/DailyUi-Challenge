@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <style>
+        body {
+            background-color: rgb(27, 18, 9);
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 50px;
+
+        }
+
+        #overallSection {
+            width: 100%;
+            max-width: 500px;
+            margin: 200px auto;
+            background-color: aliceblue;
+            border-radius: 30px;
+
+        }
+
+        #bigHeader {
+            height: 170px;
+            background-color: #4169E1;
+            border-radius: 30px 30px 0px 0px;
+        }
+
+        .firstHeader,
+        .headIcon {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+
+        .headerIcon {
+            padding-left: 7px;
+        }
+
+        .firstHeader {
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        #secondSection {
+            width: 90%;
+            margin: 0px auto;
+        }
+#bigdiv{
+    margin-bottom: 10px;
+}
+        .cardi {
+            display: flex;
+        }
+
+        .cards {
+            height: 45px;
+            width: 100%;
+            border: 1px solid rgb(187, 192, 196);
+            margin-top: 40px;
+            padding: 10px 0px 10px 10px;
+
+        }
+        .cards:hover{
+            border: 2px solid black;
+        }
+
+        .fa-credit-card,
+        .fa-google {
+            margin-bottom: 10px;
+        }
+
+        .creditCard {
+            margin-right: 5px;
+        }
+
+        .googlePays {
+            margin-left: 5px;
+        }
+
+        .cardNum {
+            margin-top: 40px;
+        }
+
+        .cardNumber {
+            width: 100%;
+            height: 45px;
+            box-sizing: border-box;
+            padding-left: 10px;
+            border: 1px solid rgb(187, 192, 196);
+
+        }
+
+        .expiresecurity {
+            display: flex;
+
+        }
+
+        .expisec {
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        .expi {
+            margin-right: 5px;
+        }
+
+        .seci {
+            margin-left: 5px;
+        }
+
+        .exp,
+        .sec {
+            width: 100%;
+            box-sizing: border-box;
+            height: 45px;
+            padding-left: 10px;
+            border: 1px solid rgb(187, 192, 196);
+        }
+
+        .vouch{
+            margin-top: 40px;
+        }
+        .voucherCode{
+            width: 100%;
+            height: 45px;
+            box-sizing: border-box;
+            border: 1px solid rgb(187, 192, 196);
+        }
+
+        .checkB{
+            margin: 10px 0px;
+        }
+
+        .line{
+            margin-top: 40px;
+
+            height: 1px;
+            width: 100%;
+            background-color: rgb(187, 192, 196);;
+
+        }
+        .totalOrder{
+            margin-top: 10px;
+            font-weight: 700px;
+            font-size: 12px;
+        }
+        
+        .submit{
+            width: 100%;
+            height: 45px;
+            margin: 20px 0px;
+            background-color: #4169E1;
+            border: none;
+            font-size: 18px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="overallSection">
+        <header id="bigHeader">
+            <div class="firstHeader">
+                <div class="headTime">9:30</div>
+                <div class="headIcon">
+                    <div class="headerIcon"><i class="fa-brands fa-servicestack"></i></div>
+                    <div class="headerIcon"><i class="fa-solid fa-wifi"></i></div>
+                    <div class="headerIcon"><i class="fa-solid fa-battery-three-quarters"></i></div>
+                </div>
+            </div>
+            <h1>PAYMENT</h1>
+        </header>
+        <section id="secondSection">
+            <div class="cardi">
+                <div class="cards creditCard">
+                    <i class="fa-regular fa-credit-card"></i> <br />
+                    Credit Card
+                </div>
+                <div class="cards googlePays">
+                    <i class="fa-brands fa-google"></i> <br />
+                    Google Pays
+                </div>
+            </div>
+            <form>
+                <div id="bigdiv">
+                    <div class="cardNum">
+                        <label>Card Number</label> <br />
+                        <input type="number" name="CardNumber" id="" placeholder="XXX XXX XXX" class="cardNumber">
+                    </div>
+                    <div class="expiresecurity">
+                        <div class="expisec expi">
+                            <label>Expiration</label> <br />
+                            <input type="date" name="Expiration" id=""  class="exp">
+                        </div>
+                        <div class="expisec seci">
+                            <label>Security Code</label> <br />
+                            <input type="number" name="SecurityCode" id="" placeholder="XXX" class="sec">
+                        </div>
+                    </div>
+                    <div class="vouch">
+                        <label>Voucher Code</label> <br />
+                        <input type="number" name="VoucherCode" id="" class="voucherCode">
+                    </div>
+                    <div class="checkB">
+                        <label>
+                            <input type="checkbox" name="check" id="">Use billing addreess the same as shipping <br/>address
+                        </label>
+                    </div>
+                    <div class="line"></div>
+                    <div class="totalOrder">Your Total Order <br /> <b>2000.00 </b>$</div>
+                    <div class="submiit">
+                        <input type="submit" value="Place Order" class="submit">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </section>
+
+</body>
+
+</html>
