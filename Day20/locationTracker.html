@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            margin: 10px 0px;
+            color: black;
+        }
+        #overAllSec{
+            max-width: 330px;
+            margin: 20px auto;
+            border: 1px solid black;
+            border-radius: 20px;
+            background-color: rgb(217, 233, 240);
+        }
+        .navIcon{
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-between;
+            padding: 10px 17px;
+            font-size: 0.8rem;
+            color: rgb(70, 59, 59);
+            font-weight: 600;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .iFrames{
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        iframe{
+            border: none;
+            height: 300px;
+            opacity: 0.7;
+        }
+        .underIframe{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding: 10px 17px;
+            font-size: 0.8rem;
+            color: rgb(70, 59, 59);
+            font-weight: 600;
+        }
+        .moiLocation, .geoLocation{
+            display: flex;
+            justify-content: left;
+            gap: 8px;
+            padding: 10px 17px;
+            align-items: center;
+        }
+
+        .localT, .sokaT{
+            font-size: 0.7rem;
+            height: 15px;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.445);
+            width: 100%;
+            border-radius: 5px;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .justKm{
+            padding: 10px 17px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .justKm > div:nth-child(2){
+            color: rgb(180, 139, 139);
+        }
+        .foot{
+            margin: 0px;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 5px;
+            padding: 10px 17px;
+            font-size: 0.8rem;
+            color: rgba(0, 0, 0, 0.603);
+            font-weight: 600;
+        }
+        .foot > div{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            height: 30px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.349);
+        }
+        .foot > div:nth-child(2){
+            background-color: rgba(0, 81, 255, 0.774);
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <section id="overAllSec">
+        <div class="navIcon">
+            <div>
+                <i class="fa-solid fa-less-than"></i>
+            </div>
+            <div>
+                Direction
+            </div>
+            <div>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+        </div>
+        <div class="iFrames">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d44845.920800350556!2d3.359415794487147!3d6.539756614677817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1756437304699!5m2!1sen!2sng"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="underIframe">
+            <div>
+                <div><i class="fa-solid fa-car"></i></div>
+                <div>5 dk</div>
+            </div>
+            <div>
+                <div><i class="fa-solid fa-train"></i></div>
+                <div>17 dk</div>
+            </div>
+            <div>
+                <div><i class="fa-solid fa-person-walking-luggage"></i></div>
+                <div>24 dk</div>
+            </div>
+        </div>
+        <div class="moiLocation">
+            <div><i class="fa-solid fa-location-crosshairs"></i></div>
+            <div class="localT">My Location</div>
+        </div>
+        <div class="geoLocation">
+            <div><i class="fa-solid fa-location-dot"></i></div>
+            <div class="sokaT">564 sokak</div>
+        </div>
+        <div class="justKm">
+            <div>5 dk (2.2km) </div>
+            <div>fastest route due to traffic</div>
+        </div>
+        <div class="foot">
+            <div>
+                <div><i class="fa-solid fa-file-lines"></i></div>
+                <div>Option</div>
+            </div>
+            <div>
+                <div><i class="fa-solid fa-star-and-crescent"></i></div>
+                <div>Start</div>
+            </div>
+            <div>
+                <div><i class="fa-solid fa-thumbtack"></i></div>
+                <div>Stabilise</div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
