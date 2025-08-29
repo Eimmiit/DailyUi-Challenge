@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0px;
+            background-image: linear-gradient(to right, rgb(255, 51, 0), rgb(238, 238, 6));
+        }
+
+        #overAllSec {
+            max-width: 300px;
+            margin: 20px auto;
+            background-color: rgb(32, 25, 25);
+        }
+
+        .topImage {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+
+        .mainImage {
+            width: 50%;
+            margin-top: 20px;
+
+        }
+
+        .topImage>h3 {
+            margin: 0px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .topWords {
+            display: flex;
+            padding: 10px;
+            justify-content: center;
+            gap: 5px;
+
+        }
+
+
+        .topWords>div {
+            background-color: rgb(24, 3, 3);
+            height: 30px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            color: white;
+            font-size: 10px;
+            box-shadow: 1px 1px 2px rgb(78, 73, 73);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .allTime {
+            background-color: rgb(238, 55, 183) !important;
+        }
+
+        .firstGrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            color: white;
+            margin: 5px 0px;
+            font-size: 10px;
+            padding-left: 10%;
+            gap: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        .playr,
+        .Nae {
+            grid-column: span 2;
+        }
+
+
+        .secondGrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            color: white;
+            margin: 10px 0px;
+            font-size: 12px;
+            padding-left: 10%;
+            gap: 15px;
+            font-size: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .outline{
+            display: flex;
+            justify-content: center;
+        }
+        .line {
+            width: 90%;
+            height: 2px;
+            background-color: rgba(255, 255, 255, 0.281);
+
+        }
+
+
+        button {
+            border: none;
+            border-radius: 3px;
+            height: 30px;
+            width: 200px;
+            background-image: linear-gradient(45deg, rgb(112, 4, 103), rgb(209, 209, 78), rgb(156, 216, 60));
+        }
+
+        .downBtn {
+            display: flex;
+            height: 45px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="overAllSec">
+        <div class="topImage">
+            <img src="Medal Mockup.png" alt="Medal Image" class="mainImage">
+            <h3>LEADERBOARD</h3>
+        </div>
+        <div class="topWords">
+            <div>Today</div>
+            <div>Month</div>
+            <div class="allTime">All Time</div>
+        </div>
+        <div class="firstGrid">
+            <div class="firstGridInner">Rank</div>
+            <div class="firstGridInner playr">Player</div>
+            <div class="firstGridInner">Score</div>
+        </div>
+        <div>
+            <div class="secondGrid">
+                <div class="secondGridInner">1</div>
+                <div class="secondGridInner Nae">Angie Smith</div>
+                <div class="secondGridInner">90,345</div>
+            </div>
+            <div class="outline">
+                <div class="line"></div>
+            </div>
+            <div class="secondGrid">
+                <div class="secondGridInner">2</div>
+                <div class="secondGridInner Nae">Picachu</div>
+                <div class="secondGridInner">86,713</div>
+            </div>
+            <div class="outline">
+                <div class="line"></div>
+            </div>
+            <div class="secondGrid">
+                <div class="secondGridInner">3</div>
+                <div class="secondGridInner Nae">Silas</div>
+                <div class="secondGridInner">77,851</div>
+            </div>
+            <div class="outline">
+                <div class="line"></div>
+            </div>
+            <div class="secondGrid">
+                <div class="secondGridInner">4</div>
+                <div class="secondGridInner Nae">Robdonahue</div>
+                <div class="secondGridInner">65,490</div>
+            </div>
+            <div class="outline">
+                <div class="line"></div>
+            </div>
+            <div class="secondGrid">
+                <div class="secondGridInner">5</div>
+                <div class="secondGridInner Nae">Angeleyes</div>
+                <div class="secondGridInner">64,336</div>
+            </div>
+            <div class="outline">
+                <div class="line"></div>
+            </div>
+            <div class="secondGrid">
+                <div class="secondGridInner">6</div>
+                <div class="secondGridInner Nae">Tyler Scott</div>
+                <div class="secondGridInner">61,210</div>
+            </div>
+            <div class="outline">
+                <div class="line"></div>
+            </div>
+            <div class="secondGrid">
+                <div class="secondGridInner">7</div>
+                <div class="secondGridInner Nae">cam_e0</div>
+                <div class="secondGridInner">57,004</div>
+            </div>
+            <div class="outline">
+                <div class="line"></div>
+            </div>
+            <div class="secondGrid">
+                <div class="secondGridInner">8</div>
+                <div class="secondGridInner Nae">sergie osmue</div>
+                <div class="secondGridInner">55,312</div>
+            </div>
+            <div class="outline">
+                <div class="line"></div>
+            </div>
+            <div class="secondGrid">
+                <div class="secondGridInner">9</div>
+                <div class="secondGridInner Nae">Alenjandro313</div>
+                <div class="secondGridInner">54,996</div>
+            </div>
+            <div class="outline">
+                <div class="line"></div>
+            </div>
+            <div class="secondGrid">
+                <div class="secondGridInner">10</div>
+                <div class="secondGridInner Nae">Twyla.girl</div>
+                <div class="secondGridInner">53,207</div>
+            </div>
+        </div>
+        <div class="downBtn">
+            <button>View Top 100</button>
+        </div>
+
+    </section>
+</body>
+
+</html>
