@@ -1,0 +1,263 @@
+:root {
+    --primary: #d76ef5;
+    --secondary: #7207f2;
+    --primary-light: #bf07f2;
+    --secondary-deep: #6853f5;
+    --extra: #d5f502;
+    --extra-light: #f5efda;
+}
+
+body {
+    margin: 0px;
+    font-family: "roboto", sans-serif;
+    background-color: rgb(1, 5, 31);
+}
+
+section {
+    max-width: 1024px;
+    margin: 20px auto;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: skyblue;
+    padding: 15px;
+}
+
+#leftMain {
+    width: 50%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 60px;
+    height: 5px;
+    border: 1px solid var(--extra-light);
+    border-radius: 50px;
+    font-family: "asimovian", sans-serif;
+    color: beige;
+}
+
+.formStart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.formStart>h2 {
+    margin: 10px 0px;
+    font-family: "TASA Explorer", sans-serif;
+    font-weight: 100;
+    font-size: 1.7rem;
+}
+
+.formStart>p {
+    margin: 0px;
+    font-size: 0.8rem;
+    font-family: "TASA Explorer", sans-serif;
+    font-weight: 100;
+}
+
+.mainForm {
+    margin: 20px;
+    width: 60%;
+}
+
+label {
+    font-weight: 100;
+    margin: 10px 0px;
+    font-size: 0.8rem;
+}
+
+input {
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--extra-light);
+}
+
+.innerForm {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    background-color: var(--extra);
+    font-family: "asimovian", sans-serif;
+    font-weight: 400;
+    color: beige;
+}
+
+.dWformbtn {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.dWformbtn>button {
+    width: 50%;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid var(--extra-light);
+    background-color: transparent;
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dWformbtn>button>div>i {
+    color: white;
+}
+
+.dwdwOverall {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+
+.dwdwOverall>div>a {
+    color: black;
+}
+
+#rightMain {
+    background: url(Assets/Untitled\ design.jpg);
+    background-size: cover;
+    width: 50%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imgDiv1 {
+    height: 100px;
+    width: 300px;
+}
+
+.imgDiv1in {
+    background-color: var(--extra);
+    margin: 20px 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.6rem;
+    width: 50%;
+    position: relative;
+    z-index: 1000;
+}
+
+.imgDiv1in>h3 {
+    margin: 0px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.imgDiv1in>h3::after {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    background-color: black;
+    height: 5px;
+    width: 5px;
+    margin-left: 10px;
+}
+
+.imgDiv1in>p {
+    margin: 0px;
+}
+
+.imgDiv1out {
+    background-color: rgba(0, 0, 0, 0.568);
+    margin: -40px 0px 0px 40px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.6rem;
+    width: 60%;
+    color: white;
+}
+
+.imgDiv1out>h3 {
+    margin: 0px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.imgDiv1out>p {
+    margin: 0px;
+}
+
+.imgDiv1out>h3::after {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    background-color: white;
+    height: 5px;
+    width: 5px;
+    margin-left: 20px;
+}
+
+.imgDiv2 {
+    height: 200px;
+    width: 300px;
+}
+
+.imgDiv2in {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    margin: 20px 100px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    width: 70%;
+    position: relative;
+    z-index: 1000;
+}
+
+.imgDiv2in>h3 {
+    margin: 0px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.imgDiv2in>p {
+    margin: 0px;
+}
+
+.imgDiv2out {
+    background-color: white;
+    margin: -40px 0px 0px 40px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    width: 50%;
+}
+
+.imgDiv2out>h3 {
+    margin: 0px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.imgDiv2out>p {
+    margin: 0px;
+}
+
+.imgDiv2out>h3::after {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.63);
+    height: 5px;
+    width: 5px;
+    margin-left: 10px;
+}
