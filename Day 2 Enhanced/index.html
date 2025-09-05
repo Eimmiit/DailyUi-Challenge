@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Day 2 enhanced</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="topNav">
+      <div class="logo">logo</div>
+      <!-- mid nav -->
+      <div class="topMidNav">
+        <div class="innerTopMidNav">
+          <div class="innerTopMidNavNum innerTopMidone">1</div>
+          <div>Information</div>
+          <div class="lines"></div>
+        </div>
+        <div class="innerTopMidNav">
+          <div class="innerTopMidNavNum">2</div>
+          <div>Payment Details</div>
+          <div class="lines"></div>
+        </div>
+        <div class="innerTopMidNav">
+          <div class="innerTopMidNavNum">3</div>
+          <div>Complete Order</div>
+        </div>
+      </div>
+    </nav>
+    <!-- overall Section -->
+    <section>
+      <!-- left modal -->
+      <main id="leftMain" class="leftMainy">
+        <!-- top outside words (payment detail) -->
+        <h2>Payment Details</h2>
+        <h3>Payment Method</h3>
+        <!-- first form -->
+        <div class="formInp formInp1">
+          <form action="#" class="topCardForm">
+            <label class="rad">
+              <input type="radio" class="radi" />Debit/Credit Card
+            </label>
+            <!-- card number AREA -->
+            <div class="cardasp">
+              <div class="cardini">
+                <label for="cardHolder">Card Holder</label>
+                <input
+                  type="name"
+                  name="username"
+                  id="cardHolder"
+                  class="cdNum"
+                />
+              </div>
+              <div class="cardry">
+                <div class="cardery">
+                  <label for="cardNumber">Card Number</label>
+                  <input
+                    type="number"
+                    name="usernumber"
+                    id="cardNumber"
+                    class="cdNum cdNum1"
+                  />
+                </div>
+                <div class="cardery">
+                  <label for="expireDate">Expiry Date</label>
+                  <input
+                    type="month"
+                    name="usernumber"
+                    id="cardNumber"
+                    class="cdNum cdNum2"
+                  />
+                </div>
+                <div class="cardery">
+                  <label for="cvv">CVV</label>
+                  <input
+                    type="number"
+                    name="cvv"
+                    id="cardNumber"
+                    class="cdNum cdNum3"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+          <!-- midform -->
+          <form action="">
+            <div class="midFormMode">
+              <label class="midform">
+                <input type="radio" class="radi" />Google/Apple Wallet
+              </label>
+              <label class="midform">
+                <input type="radio" class="radi" />Cash
+              </label>
+            </div>
+          </form>
+        </div>
+        <!-- second outside word(billing address) -->
+        <h3>Billing Address</h3>
+        <div class="thrdfo">
+          <form action="">
+            <div class="addRess">
+              <label for="address">Address</label>
+              <input type="name" name="address" id="address" class="addinp" />
+            </div>
+            <div class="locals">
+              <div class="locale">
+                <label for="city">City</label>
+                <input type="name" name="city" id="city" class="addinp" />
+              </div>
+              <div class="locale">
+                <label for="state">State</label>
+                <input type="name" name="state" id="state" class="addinp" />
+              </div>
+            </div>
+            <div>
+              <input type="submit" value="Pay $326.80" class="submitt" />
+            </div>
+          </form>
+        </div>
+      </main>
+      <!-- right modal -->
+      <main id="rightMain" class="rightMainy">
+        <h2>Order Summary</h2>
+        <div class="overallS">
+          <div class="container">
+            <div class="cont image"><img src="assets/1.jpg" alt="" /></div>
+            <div class="cont name">NICE AIR MAX 95 EZZENTIALS</div>
+            <div class="cont price">$167</div>
+            <div class="cont color">Color:White/Green Apple/Yellow</div>
+            <div class="cont size">Size: 42.5EU</div>
+          </div>
+          <div class="container">
+            <div class="cont image"><img src="assets/1.jpg" alt="" /></div>
+            <div class="cont name">NICE AIR MAX 95 EZZENTIALS</div>
+            <div class="cont price">$167</div>
+            <div class="cont color">Color:White/Green Apple/Yellow</div>
+            <div class="cont size">Size: 42.5EU</div>
+          </div>
+          <div class="container">
+            <div class="cont image"><img src="assets/3.jpg" alt="" /></div>
+            <div class="cont name">NICE AIR MAX 95 EZZENTIALS</div>
+            <div class="cont price">$167</div>
+            <div class="cont color">Color:White/Green Apple/Yellow</div>
+            <div class="cont size">Size: 42.5EU</div>
+          </div>
+        </div>
+        <h3>Discount Code</h3>
+        <div class="undDis">
+          <div>ZMM-LV2-890</div>
+          <div>Apply</div>
+        </div>
+        <div class="table">
+          <div class="wordf">Subtotal</div>
+          <div class="curr">$296,000.05</div>
+          <div class="wordf">Discount</div>
+          <div class="curr">2,000,000.98</div>
+          <div class="wordf">Delivery</div>
+          <div class="curr">50,000.64</div>
+          <div class="liness"></div>
+          <div class="wordf">Total</div>
+          <div class="curr">Calculate urself</div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>
