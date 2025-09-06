@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Day 3 enhanced</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <style>
+      :root {
+        --primary-color: rgb(155, 3, 163);
+        --secondary-color: rgb(90, 1, 94);
+        --secondary-deep: rgb(39, 1, 41);
+        --primary-light: rgb(255, 255, 255);
+        --text-dime: rgba(61, 38, 61, 0.575);
+      }
+      body {
+        margin: 0px;
+        background-color: var(--secondary-color);
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-weight: 600;
+      }
+      section {
+        margin: 30px auto;
+        max-width: 1024px;
+        background-color: var(--primary-light);
+        padding: 20px;
+        border-radius: 10px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        align-items: center;
+      }
+      .logo {
+        font-size: 1.5rem;
+      }
+      .logo > span {
+        margin: 0px;
+        color: var(--primary-color);
+      }
+      .midNav {
+        display: flex;
+        justify-content: flex-start;
+        width: 70%;
+        gap: 20px;
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: var(--text-dime);
+      }
+      .rightNav {
+        padding: 10px;
+        background-color: var(--secondary-deep);
+        border-radius: 5px;
+        color: var(--primary-light);
+        font-size: 0.7rem;
+        font-weight: 400;
+      }
+      .main {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .box1,
+      .box2 {
+        width: 50%;
+        padding: 30px;
+      }
+      .box1 {
+        width: 350px;
+      }
+      .main1 {
+        margin-top: 50px;
+        padding: 5px 10px;
+        border-radius: 25px;
+        border: 0.5px solid var(--primary-color);
+        font-size: 0.6rem;
+        color: var(--primary-color);
+        background-color: rgb(255, 204, 255);
+        width: 70%;
+      }
+      .main > .box1 > h1 {
+        font-size: 2.5rem;
+        margin: 10px 0px;
+      }
+      .main > .box1 > p {
+        font-size: 0.6rem;
+        color: var(--text-dime);
+      }
+      .twoBtn {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+      }
+      .twoBtn > button {
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid var(--primary-color);
+        background-color: white;
+        width: 100%;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        color: var(--text-dime);
+        margin-top: 20px;
+      }
+      .container > div > h3 {
+        font-size: 0.8rem;
+        margin: 10px 0px;
+        color: var(--secondary-deep);
+      }
+      .imga {
+        margin-top: 30px;
+        width: 100%;
+        height: 350px;
+        background-image: url(assets/1.jpg);
+        background-size: cover;
+        border: 15px solid var(--primary-color);
+      }
+      .tefg {
+        width: 100px;
+        height: 25px;
+        background-color: var(--secondary-deep);
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: absolute;
+        top: 300px;
+        right: 500px;
+        font-size: 0.6rem;
+      }
+      .fa-solid {
+        text-shadow: -1px -1px 0 var(--secondary-deep),
+          1px -1px 0 var(--secondary-deep), -1px 1px 0 var(--secondary-deep),
+          1px 1px 0 var(--secondary-deep);
+        color: white;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <nav>
+        <div class="logo">Hire<span>Wise</span></div>
+        <div class="midNav">
+          <div>Explore</div>
+          <div>Solutions</div>
+          <div>About</div>
+          <div>Blog</div>
+          <div>Login</div>
+        </div>
+        <div class="rightNav">Start For Free</div>
+      </nav>
+      <div class="main">
+        <div class="box1">
+          <div class="main1">Trusted by over 50k+ job seekers worldwide</div>
+          <h1>Job Search <br />de Smart, Fast, and Effortless</h1>
+          <p>
+            HireWise finds the best roles, tailors your resume, and helps <br />
+            you apply - all in one place
+          </p>
+          <div class="twoBtn">
+            <button>Start Your Job search</button>
+            <button>See How it works</button>
+          </div>
+          <div class="container">
+            <div>
+              <div><i class="fa-solid fa-bag-shopping"></i></div>
+              <h3>Smart Job Matching</h3>
+            </div>
+            <div>
+              <div><i class="fa-solid fa-file"></i></div>
+              <h3>AI powered resume builder</h3>
+            </div>
+            <div>
+              <div><i class="fa-solid fa-bolt-lightning"></i></div>
+              <h3>One click Application</h3>
+            </div>
+          </div>
+        </div>
+        <div class="box2">
+          <div class="imga"></div>
+          <div class="tefg">Reach out to us</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
